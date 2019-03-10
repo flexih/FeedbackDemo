@@ -42,7 +42,7 @@ extension Feedbackable where Self: UIResponder {
         case .medium:
             ImpactFeedbackGenerator.shared.medium.impactOccurred()
         case .light:
-            ImpactFeedbackGenerator.shared.medium.impactOccurred()            
+            ImpactFeedbackGenerator.shared.light.impactOccurred()            
         }
     }
     public func fb_prepare() {
@@ -52,7 +52,7 @@ extension Feedbackable where Self: UIResponder {
         case .medium:
             ImpactFeedbackGenerator.shared.medium.prepare()
         case .light:
-            ImpactFeedbackGenerator.shared.medium.prepare()
+            ImpactFeedbackGenerator.shared.light.prepare()
         }
     }
 }
