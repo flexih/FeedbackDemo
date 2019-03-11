@@ -18,7 +18,7 @@ public protocol Feedbackable {
     func fb_prepare();
 }
 
-extension Feedbackable where Self: UIResponder {
+extension Feedbackable where Self: UIView {
     public var fb_style: UIImpactFeedbackGenerator.FeedbackStyle {
         get {
             return objc_getAssociatedObject(self, &fb_styleKey) as? UIImpactFeedbackGenerator.FeedbackStyle ?? .medium
